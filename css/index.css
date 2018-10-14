@@ -1,0 +1,83 @@
+#wonder {
+  background: #68687d;
+}
+
+#container {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#container .title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#container .title img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#container .title .des {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#container .title hr {
+  margin: 20px 0;
+}
+
+#container .list .sort .item {
+  text-align: center;
+  margin: 20px 0;
+  line-height: 24px;
+}
+
+#container .list .sort .item .item-detail {
+  width: 100px;
+  position: relative;
+  left: 50%;
+  text-align: left;
+  margin-left: -50px;
+}
+
+#container .list .sort .item .item-detail:hover {
+  color: #FFF;
+}
+
+#container .list .sort .item .item-detail i {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#container .list .sort .item .item-detail .name {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  text-align: left;
+}
+
+#container .list .sort .item .item-detail .name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#container .list .sort .item .works {
+  display: none;
+}
+
+#container .list .sort .item .works li a {
+  display: block;
+  margin: 10px 0px;
+  height: 20px;
+  line-height: 20px;
+  text-align: left;
+  width: 200px;
+  position: relative;
+  left: 50%;
+}
+
+#container .list .sort .item .works li a:hover {
+  color: #fff;
+}

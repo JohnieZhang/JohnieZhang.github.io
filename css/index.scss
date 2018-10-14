@@ -1,0 +1,87 @@
+#wonder{
+        background: #68687d;
+    }
+    #container {
+        width:1200px;
+        height: auto;
+        margin: 0 auto;
+        // background: #fff;
+        // color: #fff;
+        
+        .title {
+            text-align: center; 
+            padding-top:50px;
+            img {
+                width:200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            .des {
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            hr{
+                margin:20px 0;
+            }
+        }
+
+        .list {
+            .sort{
+                .item {
+                    text-align: center;
+                    margin:20px 0;
+                    line-height: 24px;
+                    .item-detail{
+                        width:100px;
+                        position: relative;
+                        left: 50%;
+                        text-align: left;
+                        margin-left: -50px;
+                        &:hover {
+                            color:#FFF;
+                        }
+                        i{
+                            display: inline-block;
+                            margin-right:10px;
+                        }  
+                        .name{
+                            display: inline-block;
+                            height: 24px;
+                            line-height: 24px;
+                            // margin-left:15px;
+                            text-align: left;
+                            &:hover {
+                                cursor: pointer;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    
+                    .works {
+                        display: none;
+                        li {
+                            a {
+                                // margin-left: 34px;
+                                display: block;
+                                margin: 10px 0px;
+                                height: 20px;
+                                line-height: 20px;
+                                text-align:left;
+                                width:200px;
+                                position: relative;
+                                left: 50%;
+                                // color: #4f3787;
+                                // color: #fff
+                                &:hover {
+                                    color:#fff;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            
+        }
+
+    }
