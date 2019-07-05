@@ -1,0 +1,12 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"><title>smilevue</title><link href=./static/css/app.a8f9b72f147be7f1853b94e469429d98.css rel=stylesheet></head><body><div id=app></div><script>//屏幕适配
+      //获取页面宽度
+      let htmlwidth = document.documentElement.clientWidth || document.body.clientWidth ;
+      //获取设备的根元素
+      let htmlDom = document.getElementsByTagName('html')[0];
+      //当页面太大时，字体也会很大。通过控制页面宽度来控制字体大小
+      if(htmlwidth>750)
+        {
+          htmlwidth=750
+        }
+      //以iPhone5为例，宽320px，字体大小16px,，所以此处除以20。当屏幕宽度边宽时，字体就会变大
+      htmlDom.style.fontSize= htmlwidth/20 +'px';</script><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.95d18dccdf10672cdfc1.js></script><script type=text/javascript src=./static/js/app.b440b5d8fe992389bdfa.js></script></body></html>

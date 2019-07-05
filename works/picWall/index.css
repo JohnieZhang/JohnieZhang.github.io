@@ -1,0 +1,123 @@
+body{
+    background: #000;
+}
+#wrap {
+    width: 130px;
+    height: 200px;
+    margin: 150px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    
+
+    /* wrap标签在中心点 */
+    /* perspective: 1000px; */
+    /* 当有transform时，perspective要写在其第一个参数里 */
+    /* 控制观看角度 */
+    transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+    /* transform: perspective(1000px) rotate(-22deg,0deg,0deg); 复合样式要分开写 */
+}
+
+#wrap>div{
+    /* wrap下的第一个div,css3新的属性 >*/
+    position: absolute;
+    transition: 1s;
+}
+
+#wrap img {
+    vertical-align: middle;
+    box-shadow: 0 0 5px #FFF;
+    /* 去除图片之间的间隙 */
+}
+#wrap .shadow {
+    height: 200px;
+    margin-top: 10px;
+    /* 图片的x轴镜像 */
+    transform: scale(1,-1);
+}
+
+#wrap span{
+    display: block;
+    width:1000px;
+    height: 1000px;
+    /* background:radial-gradient(rgb(50,50,50),rgba(0,0,0,0)); */
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    /* 70%为rgba(0,0,0,0)在过渡中所占比例 */
+    background:radial-gradient(rgb(50,50,50),rgba(0,0,0,0) 70%);
+    transform: translateY(105px) rotateX(90deg);
+
+    /* radial-gradient圆形渐变
+        linear-gradient线性渐变
+     */
+    
+}
+
+
+/* 旋转div的角度以及设置距离，十张图片，每张36度 */
+/*
+#wrap>div:nth-child(1) {
+   transform: rotateY(36deg) translateZ(400px);
+}
+#wrap>div:nth-child(2){
+   transform: rotateY(72deg) translateZ(400px);
+}
+#wrap>div:nth-child(3){
+   transform: rotateY(108deg) translateZ(400px);
+}
+#wrap>div:nth-child(4){
+   transform: rotateY(144deg) translateZ(400px);
+}
+#wrap>div:nth-child(5){
+   transform: rotateY(180deg) translateZ(400px);
+}
+#wrap>div:nth-child(6){
+   transform: rotateY(216deg) translateZ(400px);
+}
+#wrap>div:nth-child(7){
+   transform: rotateY(252deg) translateZ(400px);
+}
+#wrap>div:nth-child(8){
+   transform: rotateY(288deg) translateZ(400px);
+}
+#wrap>div:nth-child(9){
+   transform: rotateY(324deg) translateZ(400px);
+}
+#wrap>div:nth-child(10){
+   transform: rotateY(360deg) translateZ(400px);
+}
+
+
+#wrap>div:nth-child(1) div{
+   background: linear-gradient(rgb(0,0,0) 40%,rgba(0,0,0,0)), url(images/1.jpg);
+}
+#wrap>div:nth-child(2) div{
+   background: linear-gradient(rgb(0,0,0) 40%,rgba(0,0,0,0)), url(images/2.jpg);
+}
+#wrap>div:nth-child(3) div{
+   background: linear-gradient(rgb(0,0,0) 40%,rgba(0,0,0,0)), url(images/3.jpg);
+}
+#wrap>div:nth-child(4) div{
+   background: linear-gradient(rgb(0,0,0) 40%,rgba(0,0,0,0)), url(images/4.jpg);
+}
+#wrap>div:nth-child(5) div{
+   background: linear-gradient(rgb(0,0,0) 40%,rgba(0,0,0,0)), url(images/5.jpg);
+}
+#wrap>div:nth-child(6) div{
+   background: linear-gradient(rgb(0,0,0) 40%,rgba(0,0,0,0)), url(images/6.jpg);
+}
+#wrap>div:nth-child(7) div{
+   background: linear-gradient(rgb(0,0,0) 40%,rgba(0,0,0,0)), url(images/7.jpg);
+}
+#wrap>div:nth-child(8) div{
+   background: linear-gradient(rgb(0,0,0) 40%,rgba(0,0,0,0)), url(images/8.jpg);
+}
+#wrap>div:nth-child(9) div{
+   background: linear-gradient(rgb(0,0,0) 40%,rgba(0,0,0,0)), url(images/9.jpg);
+}
+#wrap>div:nth-child(10) div{
+   background: linear-gradient(rgb(0,0,0) 40%,rgba(0,0,0,0)), url(images/10.jpg);
+}
+*/
